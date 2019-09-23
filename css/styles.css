@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Hind&display=swap');
+body {
+	margin: 0;
+	height: auto;
+	background-color: #eee;
+}
+.showcase nav {
+	position: absolute;
+	left: 55%;
+}
+.showcase {
+	text-align: center;
+	margin: 0;
+}
+.showcase ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.showcase li {
+	padding-right: 1rem;
+}
+.showcase a {
+	text-decoration: none;
+	color: #333333;
+	font-size: 1.1rem;
+}
+.showcase a:hover {
+	transform: uppercase;
+	color: burlywood;
+}
+.box {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 3rem;
+	align-items: center;
+	text-align: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.box p {
+	font-size: 1rem;
+	font-family: 'Big Shoulders Display', cursive;
+	margin-top: -60px;
+}
+
+.image {
+	background: url('ada.jpg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+	margin: 0;
+}
+
+.box,
+.image {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.summary h2 {
+	text-align: center;
+	padding-top: 40px;
+	text-orientation: upright;
+	writing-mode: vertical-rl;
+	text-transform: uppercase;
+}
+p {
+	font-family: 'Hind', sans-serif;
+	font-weight: 600px;
+	font-size: 1.2rem;
+}
+.summary {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	height: auto;
+	position: relative;
+	right: 20%;
+	top: 10%;
+}
+.summary p {
+	padding-top: 50px;
+}
+
+section {
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.famous-quotes ul {
+	list-style-type: none;
+	text-align: left;
+	font-family: 'Hind', sans-serif;
+}
+
+.combine {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: wheat;
+}
+.personal-life {
+	border-right: 1px dashed black;
+}
+.personal-life p {
+	padding-left: 50px;
+	padding-right: 40px;
+	text-align: center;
+}
+.legacy {
+	padding-left: 50px;
+	padding-right: 40px;
+	text-align: center;
+}
+
+.early-life {
+	background-color: gainsboro;
+}
+
+.famous-quotes li {
+	font-size: 1rem;
+	padding-bottom: 5px;
+	list-style-type: circle;
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+	color: whitesmoke;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+	nav {
+		display: none;
+	}
+	.box {
+		text-align: center;
+		padding-left: 100px;
+		margin-top: -30px;
+	}
+	.box p {
+		font-size: 1.5rem;
+	}
+	.combine {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.personal-life {
+		border-bottom: 1px dotted black;
+	}
+	.famous-quotes li {
+		text-align: left;
+		margin-left: -20px;
+	}
+	.summary {
+		margin-top: -50px;
+	}
+	.early-life {
+		text-align: left;
+		padding-left: 40px;
+	}
+	.work {
+		text-align: left;
+		padding-left: 20px;
+		/* margin-right: 50px; */
+	}
+}
